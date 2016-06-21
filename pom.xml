@@ -18,6 +18,20 @@
         <jdk.source.version>1.6</jdk.source.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
