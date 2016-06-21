@@ -8,7 +8,7 @@ import org.junit.Test;
  *
  * @author Anirudha Khanna
  */
-public class SampleTest {
+public class NonSeleniumTest {
 
     @Test
     public void testThatPasses() throws Exception {

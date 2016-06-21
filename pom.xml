@@ -13,6 +13,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
+        <testassist.version>0.6-SNAPSHOT</testassist.version>
+        <plugin.version>0.6-SNAPSHOT</plugin.version>
+        <jdk.source.version>1.6</jdk.source.version>
     </properties>
 
     <dependencies>
@@ -22,5 +25,46 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.53.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>2.53.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.browserstack</groupId>
+            <artifactId>automate-testassist</artifactId>
+            <version>${testassist.version}</version>
+        </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.browserstack</groupId>
+                <artifactId>automate-maven-plugin</artifactId>
+                <version>${plugin.version}</version>
+                <configuration>
+                    <source>${jdk.source.version}</source>
+                    <target>${jdk.source.version}</target>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>
