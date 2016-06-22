@@ -28,7 +28,7 @@ public class SeleniumEnabledTest {
         DesiredCapabilities caps = new DesiredCapabilities();
 
         caps.setCapability("project", "Maven Build Plugin");
-        //caps.setCapability("build", "Automate Maven Plugin Test - Sample JUnit Tests");
+        caps.setCapability("name", "Automate Maven Plugin Test - Sample JUnit Tests");
         caps.setCapability("browser", "Chrome");
         caps.setCapability("browser_version", "50.0");
         caps.setCapability("os", "OS X");
