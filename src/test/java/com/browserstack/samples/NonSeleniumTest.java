@@ -1,4 +1,4 @@
-package my.anirudha;
+package com.browserstack.samples;
 
 import org.junit.Assert;
 import org.junit.Test;

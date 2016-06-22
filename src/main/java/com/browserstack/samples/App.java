@@ -1,4 +1,4 @@
-package my.anirudha;
+package com.browserstack.samples;
 
 /**
  * Hello world!
