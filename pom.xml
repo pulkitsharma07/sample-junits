@@ -13,8 +13,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
-        <testassist.version>0.7-SNAPSHOT</testassist.version>
-        <plugin.version>0.7-SNAPSHOT</plugin.version>
+        <testassist.version>0.7.1-SNAPSHOT</testassist.version>
+        <plugin.version>0.7.1-SNAPSHOT</plugin.version>
         <jdk.source.version>1.6</jdk.source.version>
         <selenium.version>2.39.0</selenium.version>
     </properties>
