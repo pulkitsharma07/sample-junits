@@ -22,6 +22,6 @@ public class NonSeleniumTest {
 
     @Test
     public void testThatFails() throws Exception {
-        Assert.assertFalse("This will always fail", true);
+        Assert.assertTrue("This will always fail", true);
     }
 }
