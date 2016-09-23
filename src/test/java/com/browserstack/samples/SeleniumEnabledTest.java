@@ -17,8 +17,8 @@ import java.net.URL;
  */
 public class SeleniumEnabledTest {
 
-    public static final String USERNAME = System.getProperty("browserstack.user", System.getenv("BROWSERSTACK_USER"));
-    public static final String AUTOMATE_KEY = System.getProperty("browserstack.access_key", System.getenv("BROWSERSTACK_ACCESSKEY"));
+    public static final String USERNAME = System.getProperty("browserstack.user", "sauravkothari2");
+    public static final String AUTOMATE_KEY = System.getProperty("browserstack.access_key", "XVBzv9SHzyxayo1Csxbs");
     public static final String HUB_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     private RemoteWebDriver remoteWebDriver;
