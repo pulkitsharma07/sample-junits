@@ -29,6 +29,7 @@ public class SeleniumEnabledTest {
 
         System.out.println(USERNAME);
         System.out.println(AUTOMATE_KEY);
+        System.out.println(System.getenv("BROWSERSTACK_ACCESSKEY"));
         caps.setCapability("project", "Maven Build Plugin");
         caps.setCapability("name", "Automate Maven Plugin Test - Sample JUnit Tests");
         caps.setCapability("browser", "Chrome");
