@@ -27,6 +27,8 @@ public class SeleniumEnabledTest {
     public void before() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
 
+        System.out.println(USERNAME);
+        System.out.println(AUTOMATE_KEY);
         caps.setCapability("project", "Maven Build Plugin");
         caps.setCapability("name", "Automate Maven Plugin Test - Sample JUnit Tests");
         caps.setCapability("browser", "Chrome");
