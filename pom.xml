@@ -61,26 +61,4 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.browserstack</groupId>
-                <artifactId>automate-maven-plugin</artifactId>
-                <version>0.7.2-SNAPSHOT</version>
-                <configuration>
-                    <source>${jdk.source.version}</source>
-                    <target>${jdk.source.version}</target>
-                    <complianceLevel>${jdk.source.version}</complianceLevel>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test-compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>
