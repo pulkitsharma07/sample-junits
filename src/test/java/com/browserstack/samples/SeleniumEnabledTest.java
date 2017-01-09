@@ -40,6 +40,7 @@ public class SeleniumEnabledTest {
 
         this.remoteWebDriver = new RemoteWebDriver(new URL(HUB_URL), caps);
         String sessionInfo = String.format(OUTPUT_FORMAT, remoteWebDriver.getSessionId(), "abcdefg");
+        System.out.println(sessionInfo);
     }
 
     @After
