@@ -26,6 +26,7 @@ public class SeleniumEnabledTest {
 
     @Before
     public void before() throws MalformedURLException {
+	System.out.println("HOKA POKA SAKI NAKA");
         DesiredCapabilities caps = new DesiredCapabilities();
 
         System.out.println(USERNAME);
