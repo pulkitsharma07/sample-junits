@@ -61,8 +61,8 @@ public class SeleniumEnabledTest {
 
     @Test
     public void testYahooTitle() throws Exception {
-        this.remoteWebDriver.get("http://www.google.com");
+        this.remoteWebDriver.get("http://www.yahoo.com");
         String title = this.remoteWebDriver.getTitle();
-        Assert.assertEquals("Title Should be Google.", "Google", title);
+        Assert.assertEquals("Title Should be Google.", "Yahoo", title);
     }
 }
