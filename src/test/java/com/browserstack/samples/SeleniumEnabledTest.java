@@ -38,7 +38,6 @@ public class SeleniumEnabledTest {
         caps.setCapability("os", "OS X");
         caps.setCapability("os_version", "El Capitan");
         caps.setCapability("resolution", "1024x768");
-        caps.setCapability("browserstack.local", "true");
 
         this.remoteWebDriver = new RemoteWebDriver(new URL(HUB_URL), caps);
         String sessionInfo = String.format(OUTPUT_FORMAT, remoteWebDriver.getSessionId(), "testGoogleTitle");
@@ -65,6 +64,6 @@ public class SeleniumEnabledTest {
     public void testYahooTitle() throws Exception {
         this.remoteWebDriver.get("http://www.yahoo.com");
         String title = this.remoteWebDriver.getTitle();
-        Assert.assertEquals("Title Should be Yahoo.", "Yahoo", title);
+        Assert.assertEquals("Title Should be Google.", "Yahoo", title);
     }
 }
