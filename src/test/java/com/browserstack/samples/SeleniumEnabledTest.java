@@ -38,6 +38,7 @@ public class SeleniumEnabledTest {
         caps.setCapability("os", "OS X");
         caps.setCapability("os_version", "El Capitan");
         caps.setCapability("resolution", "1024x768");
+        caps.setCapability("browserstack.local",System.getenv("BROWSERSTACK_LOCAL_ENABLED"));
 
         this.remoteWebDriver = new RemoteWebDriver(new URL(HUB_URL), caps);
         String sessionInfo = String.format(OUTPUT_FORMAT, remoteWebDriver.getSessionId(), "testGoogleTitle");
